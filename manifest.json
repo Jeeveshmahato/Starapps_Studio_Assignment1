@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Shopify Detector",
+  "version": "1.0",
+  "description": "Detects if a site is built with Shopify and displays a banner.",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon-default.png",
+      "48": "icon-default.png",
+      "128": "icon-default.png"
+    },
+    "default_title": "Shopify Detector"
+  }
+}
